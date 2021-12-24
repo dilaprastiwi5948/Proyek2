@@ -18,7 +18,7 @@ $_SESSION['username'] = $username;
 $_SESSION['password'] = $password;
 ?>
 <script language="JavaScript">alert('LOGIN SUKSES');
-document.location=('home.php')</script>
+document.location=('home.php?halaman=home')</script>
 <?php
 }
 else {

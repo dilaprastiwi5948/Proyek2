@@ -3,19 +3,20 @@ $halaman = isset($_GET["halaman"])?$_GET["halaman"]:"";
 $act = isset($_GET["act"])?$_GET["act"]:"";
 if ($halaman=="beranda"){
 	include("index.php");
-	  
 }
-elseif ($halaman=="dosen") {
+elseif ($halaman=="home") {
 	if ($act=="")
-		include("pengajuan.php");
+		include("dashboard.php");
 	elseif ($act=="siswa")
 		include("dasboard.php");
 }
-elseif ($halaman=="verifikator") {
+elseif ($halaman=="inventory") {
 	if ($act=="")
-		include("daftarverifikasi.php");
-	elseif ($act=="detail") 
-		include("detailverif.php");
+		include("inventory.php");
+	elseif ($act=="tambah") 
+		include("tambahBarang.php");
+	elseif ($act=="edit") 
+		include("editBarang.php");
 }
 elseif ($halaman=="admin") {
 	if ($act=="")
